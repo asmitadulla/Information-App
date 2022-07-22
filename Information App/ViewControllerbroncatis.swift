@@ -16,7 +16,8 @@ class ViewControllerbroncatis: UIViewController {
     @IBOutlet weak var nobronchitis: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        nobronchitis.isHidden = true;
+        yesbronchitis.isHidden = true;
         // Do any additional setup after loading the view.
     }
     

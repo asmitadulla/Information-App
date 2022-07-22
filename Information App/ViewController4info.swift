@@ -17,18 +17,20 @@ class ViewController4info: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        nocold.isHidden = true;
+        yescold.isHidden = true;
         // Do any additional setup after loading the view.
     }
+    
 
     @IBAction func yesbutton(_ sender: Any) {
-        nocold.isHidden = false;
-        yescold.isHidden = true;
+        nocold.isHidden = true
+        yescold.isHidden = false;
     }
     
     @IBAction func nobutton(_ sender: Any) {
-        yescold.isHidden = false;
-        nocold.isHidden = true;
+        yescold.isHidden = true;
+        nocold.isHidden = false;
     }
     /*
     // MARK: - Navigation

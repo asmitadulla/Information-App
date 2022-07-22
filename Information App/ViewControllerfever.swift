@@ -17,7 +17,8 @@ class ViewControllerfever: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        nofever.isHidden = true;
+        yesfever.isHidden = true;
         // Do any additional setup after loading the view.
     }
     
