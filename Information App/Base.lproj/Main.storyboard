@@ -1053,10 +1053,10 @@
             </objects>
             <point key="canvasLocation" x="4037.68115942029" y="1421.6517857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller3-->
         <scene sceneID="9MA-V2-bho">
             <objects>
-                <viewController id="q0i-hY-OaG" sceneMemberID="viewController">
+                <viewController id="q0i-hY-OaG" customClass="ViewController3" customModule="Information_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tg2-6L-kxg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1092,12 +1092,6 @@
                                 <color key="textColor" name="AccentColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bzx-xq-vTM">
-                                <rect key="frame" x="53" y="295" width="87" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="Yes"/>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Unfortunately, you have a sore throat. Please click the 'More Info' button to learn more." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TSh-Yb-5l8">
                                 <rect key="frame" x="20" y="455" width="350" height="106"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1143,16 +1137,33 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dUn-TD-FsD">
-                                <rect key="frame" x="254" y="296" width="87" height="47"/>
+                                <rect key="frame" x="254" y="296" width="87" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="No"/>
+                                <connections>
+                                    <action selector="nobutton:" destination="q0i-hY-OaG" eventType="touchUpInside" id="bqu-s9-4U4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bzx-xq-vTM">
+                                <rect key="frame" x="53" y="293" width="87" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Yes"/>
+                                <connections>
+                                    <action selector="yesbutton:" destination="q0i-hY-OaG" eventType="touchUpInside" id="7wi-dM-Bpe"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tKO-cM-ZBy"/>
                         <color key="backgroundColor" red="0.75799922389999996" green="0.88575997009999996" blue="0.95531511849999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="zrK-od-gLr"/>
+                    <connections>
+                        <outlet property="Question" destination="YXg-1Y-vB7" id="rmP-GM-MSq"/>
+                        <outlet property="nosorethroat" destination="TSh-Yb-5l8" id="GfT-Px-jBE"/>
+                        <outlet property="yessorethroat" destination="WcX-Ro-Ufg" id="8jc-mW-oM6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fxo-I6-kCW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1593,7 +1604,7 @@
         <segue reference="okf-BZ-XvC"/>
         <segue reference="49R-Wc-bZZ"/>
         <segue reference="SLH-3f-Keo"/>
-        <segue reference="3o7-EF-Rvk"/>
+        <segue reference="8dr-NS-fAF"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="96-968085_dotted-notes-and-rests-part-13-music-theory-removebg-preview" width="860" height="281"/>
