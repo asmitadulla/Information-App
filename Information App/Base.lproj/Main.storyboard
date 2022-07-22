@@ -1160,7 +1160,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="zrK-od-gLr"/>
                     <connections>
-                        <outlet property="Question" destination="YXg-1Y-vB7" id="rmP-GM-MSq"/>
                         <outlet property="nosorethroat" destination="TSh-Yb-5l8" id="GfT-Px-jBE"/>
                         <outlet property="yessorethroat" destination="WcX-Ro-Ufg" id="8jc-mW-oM6"/>
                     </connections>
