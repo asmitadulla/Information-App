@@ -1,38 +1,38 @@
 //
-//  ViewController3.swift
+//  ViewControllerfever.swift
 //  Information App
 //
-//  Created by Samantha Jacobs on 7/21/22.
+//  Created by Samantha Jacobs on 7/22/22.
 //
 
 import UIKit
 
-class ViewController3: UIViewController {
+class ViewControllerfever: UIViewController {
 
     
-    @IBOutlet weak var nosorethroat: UILabel!
+    @IBOutlet weak var yesfever: UILabel!
+   
     
-    
-    @IBOutlet weak var yessorethroat: UILabel!
+    @IBOutlet weak var nofever: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        nosorethroat.isHidden = true;
-        yessorethroat.isHidden = true;
+
         // Do any additional setup after loading the view.
     }
     
+    
     @IBAction func yesbutton(_ sender: Any) {
-        nosorethroat.isHidden = false;
-        yessorethroat.isHidden = true;
+        nofever.isHidden = false;
+        yesfever.isHidden = true;
     }
+    
     
     @IBAction func nobutton(_ sender: Any) {
-        yessorethroat.isHidden = false;
-        nosorethroat.isHidden = true;
+        yesfever.isHidden = false;
+        nofever.isHidden = true;
+
     }
-    
-    
     /*
     // MARK: - Navigation
 
