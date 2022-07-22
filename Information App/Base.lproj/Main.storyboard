@@ -490,6 +490,12 @@
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="A sore throat is isuusially classified as " borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cYE-TM-eWB">
+                                <rect key="frame" x="20" y="209" width="360" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Z8F-iU-GAz"/>
                         <color key="backgroundColor" red="0.88904732600000003" green="0.96709094929999995" blue="0.9778843317" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1366,8 +1372,8 @@
         <segue reference="3fj-2K-PWv"/>
         <segue reference="Nj4-5z-PqB"/>
         <segue reference="Ti2-PZ-B5o"/>
-        <segue reference="LbK-MD-KGg"/>
-        <segue reference="9x2-zE-k6O"/>
+        <segue reference="SLH-3f-Keo"/>
+        <segue reference="YsI-OL-Nkf"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="96-968085_dotted-notes-and-rests-part-13-music-theory-removebg-preview" width="860" height="281"/>
