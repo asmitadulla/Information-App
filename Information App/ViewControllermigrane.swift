@@ -17,8 +17,8 @@ class ViewControllermigrane: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        nomigrane.isHidden = true;
-        yesmigranne.isHidden = true;
+        nomigraine.isHidden = true;
+        yesmigraine.isHidden = true;
         // Do any additional setup after loading the view.
     }
     
