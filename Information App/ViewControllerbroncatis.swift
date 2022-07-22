@@ -1,5 +1,5 @@
 //
-//  ViewControllerfever.swift
+//  ViewControllerbroncatis.swift
 //  Information App
 //
 //  Created by Samantha Jacobs on 7/22/22.
@@ -7,14 +7,13 @@
 
 import UIKit
 
-class ViewControllerfever: UIViewController {
+class ViewControllerbroncatis: UIViewController {
 
     
-    @IBOutlet weak var yesfever: UILabel!
-   
+    @IBOutlet weak var yesbronchitis: UILabel!
     
-    @IBOutlet weak var nofever: UILabel!
     
+    @IBOutlet weak var nobronchitis: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,15 +22,14 @@ class ViewControllerfever: UIViewController {
     
     
     @IBAction func yesbutton(_ sender: Any) {
-        nofever.isHidden = true;
-        yesfever.isHidden = false;
+        nobronchitis.isHidden = true;
+        yesbronchitis.isHidden = false;
     }
     
     
     @IBAction func nobutton(_ sender: Any) {
-        yesfever.isHidden = true;
-        nofever.isHidden = false;
-
+        yesbronchitis.isHidden = true;
+        nobronchitis.isHidden = false;
     }
     /*
     // MARK: - Navigation

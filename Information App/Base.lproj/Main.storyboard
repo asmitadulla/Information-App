@@ -1402,10 +1402,10 @@
             </objects>
             <point key="canvasLocation" x="2673.913043478261" y="764.73214285714278"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controllermigrane-->
         <scene sceneID="vJl-nW-5ny">
             <objects>
-                <viewController id="QXt-bK-F0Y" sceneMemberID="viewController">
+                <viewController id="QXt-bK-F0Y" customClass="ViewControllermigrane" customModule="Information_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fdo-Fq-kZy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1444,6 +1444,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Yes"/>
+                                <connections>
+                                    <action selector="yesbutton:" destination="QXt-bK-F0Y" eventType="touchUpInside" id="Bcx-e3-Stz"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Unfortunately, you have a migraine. Please click the 'More Info' button to learn more." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SIg-WC-hxO">
                                 <rect key="frame" x="22" y="436" width="355" height="126"/>
@@ -1498,21 +1501,28 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="No"/>
+                                <connections>
+                                    <action selector="nobutton:" destination="QXt-bK-F0Y" eventType="touchUpInside" id="9yH-yk-Drw"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pU2-Lb-VQY"/>
                         <color key="backgroundColor" red="0.75799922389999996" green="0.88575997009999996" blue="0.95531511849999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="eOb-me-NSq"/>
+                    <connections>
+                        <outlet property="nomigraine" destination="Oh7-2o-rrN" id="HbU-bl-9Ki"/>
+                        <outlet property="yesmigraine" destination="SIg-WC-hxO" id="PUW-w0-WR6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FTW-nT-GQs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3334.7826086956525" y="764.73214285714278"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controllerbroncatis-->
         <scene sceneID="b3i-ME-H7B">
             <objects>
-                <viewController id="dwB-ZZ-M4O" sceneMemberID="viewController">
+                <viewController id="dwB-ZZ-M4O" customClass="ViewControllerbroncatis" customModule="Information_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DRr-TA-dG1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1551,12 +1561,18 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Yes"/>
+                                <connections>
+                                    <action selector="yesbutton:" destination="dwB-ZZ-M4O" eventType="touchUpInside" id="vAw-rp-ila"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="txj-Vl-4q3">
                                 <rect key="frame" x="244" y="292" width="87" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="No"/>
+                                <connections>
+                                    <action selector="nobutton:" destination="dwB-ZZ-M4O" eventType="touchUpInside" id="swg-Bc-RUc"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Unfortunately, you have bronchitis. Please click the 'More Info' button to learn more." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CBp-jC-Luu">
                                 <rect key="frame" x="20" y="454" width="356" height="128"/>
@@ -1611,6 +1627,10 @@
                         <color key="backgroundColor" red="0.75799922389999996" green="0.88575997009999996" blue="0.95531511849999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="v8v-eY-dxF"/>
+                    <connections>
+                        <outlet property="nobronchitis" destination="xCc-4g-qRz" id="KR9-DD-M08"/>
+                        <outlet property="yesbronchitis" destination="CBp-jC-Luu" id="pQI-Wb-wBQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LV4-Yl-uha" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1623,7 +1643,7 @@
         <segue reference="okf-BZ-XvC"/>
         <segue reference="49R-Wc-bZZ"/>
         <segue reference="SLH-3f-Keo"/>
-        <segue reference="0rA-zA-iMn"/>
+        <segue reference="oHT-t1-peU"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="96-968085_dotted-notes-and-rests-part-13-music-theory-removebg-preview" width="860" height="281"/>

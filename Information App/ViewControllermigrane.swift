@@ -1,5 +1,5 @@
 //
-//  ViewControllerfever.swift
+//  ViewControllermigrane.swift
 //  Information App
 //
 //  Created by Samantha Jacobs on 7/22/22.
@@ -7,13 +7,13 @@
 
 import UIKit
 
-class ViewControllerfever: UIViewController {
+class ViewControllermigrane: UIViewController {
 
     
-    @IBOutlet weak var yesfever: UILabel!
-   
+    @IBOutlet weak var yesmigraine: UILabel!
     
-    @IBOutlet weak var nofever: UILabel!
+    
+    @IBOutlet weak var nomigraine: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,15 +23,13 @@ class ViewControllerfever: UIViewController {
     
     
     @IBAction func yesbutton(_ sender: Any) {
-        nofever.isHidden = true;
-        yesfever.isHidden = false;
+            nomigraine.isHidden = true;
+            yesmigraine.isHidden = false;
     }
     
-    
     @IBAction func nobutton(_ sender: Any) {
-        yesfever.isHidden = true;
-        nofever.isHidden = false;
-
+        yesmigraine.isHidden = true;
+        nomigraine.isHidden = false;
     }
     /*
     // MARK: - Navigation
